@@ -9,23 +9,24 @@
         - 10 is the data stored in the variable
 *** Data types
     - In python there are basic data types:
-      + strings
+      - strings
 	- strings are text surrounded by quotation marks ("")
-      + integer
+      - integer
 	- intergers are real numbers (whole numbers)
-      + boolean
+      - boolean
 	- is true or false
-      + float
+      - float
 	- are floating point numbers
 ** Arithmetic Operators
     - tldr: math in python
     - some arithmetic operators
-      + / division
-      + + addition
-      + - subtraction
-      + // floor division
-      + ** power
-      + % modulus
+      + / for division
+      + + for addition
+      + - for subtraction
+      + // for floor division
+      + ** for power
+      + % for modulus
+
 ** Basic input
     - This program takes a user input and prints it in the specified format.
     #+begin_src python
