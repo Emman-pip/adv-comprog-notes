@@ -8,15 +8,15 @@
         - x is the identifier. Can also be called as the variable name/variable
         - 10 is the data stored in the variable
 *** Data types
-    - In python there are basic data types:
-      - strings
-	+ strings are text surrounded by quotation marks ("")
-      - integers
-	+ intergers are real numbers (whole numbers)
-      - boolean
-	+ is true or false
-      - float
-	+are floating point numbers
+- In python there are basic data types:
+    - strings
+    + strings are text surrounded by quotation marks ("")
+    - integers
+    + intergers are real numbers (whole numbers)
+    - boolean
+    + is true or false
+    - float
+    +are floating point numbers
 ** Arithmetic Operators
     - tldr: math in python
     - some arithmetic operators
