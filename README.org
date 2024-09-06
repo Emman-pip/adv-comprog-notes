@@ -1,0 +1,7 @@
+* Advanced computer programming notes
+** Content
+|------------------------------+------------|
+| title                        | File       |
+|------------------------------+------------|
+| basics of python programming | basics.org |
+|------------------------------+------------|
