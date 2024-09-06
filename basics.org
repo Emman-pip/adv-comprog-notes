@@ -1,0 +1,67 @@
+* Lesson 1: Basic python
+** Variables and Data Types
+*** Variables
+    - variables store data
+    - parts of a variable:
+      + example:
+      + x = 10
+        - x is the identifier. Can also be called as the variable name/variable
+        - 10 is the data stored in the variable
+*** Data types
+    - In python there are basic data types:
+      + strings
+	- strings are text surrounded by quotation marks ("")
+      + integer
+	- intergers are real numbers (whole numbers)
+      + boolean
+	- is true or false
+      + float
+	- are floating point numbers
+** Arithmetic Operators
+    - tldr: math in python
+    - some arithmetic operators
+      + / division
+      + + addition
+      + - subtraction
+      + // floor division
+      + ** power
+      + % modulus
+** Basic input
+    - This program takes a user input and prints it in the specified format.
+    #+begin_src python
+    FN = input("Enter your name:")
+    print(f"Hello, {FN}")
+    #+end_src
+*** Lab Activity No.1
+
+ - Target output
+    #+begin_src bash
+    Enter first number: 10
+    Enter second number: 10
+    10 / 10 = 1.0
+    #+end_src
+
+**** solution 1
+    - this solution uses a class that contains two(2) methods, divide and run. The divide method performs the arithmetic operations and the run method performs the input prompting and output display
+
+    #+begin_src python
+    class Calculator:
+	def divide(self, x, y) -> float:
+	    return x / y
+
+	def run(self):
+	    print("=== Welcome to the one-way calculator (division) ===")
+	    x = int(input("Enter first number: "))
+	    y = int(input("Enter second number: "))
+	    return f"{x} / {y} = {self.divide(x, y)}"
+
+    if __name__ == "__main__":
+	print(Calculator().run())
+    #+end_src
+**** solution 2
+    - shorter solution, not object oriented
+    #+begin_src python
+      x = int(input("Enter first number: "))
+      y = int(input("Enter second number: "))
+      print(f"{x} / {y} = {x / y}")
+    #+end_src
