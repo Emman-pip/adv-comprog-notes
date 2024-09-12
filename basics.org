@@ -1,4 +1,24 @@
 * Lesson 1: Basic python
+
+** What is python?
+    - a high-level programming language
+    - a language popular for beginners for its english-like syntax
+    - can be used in OOP or procedural programming
+    - was created in 1989 by Guido van Rossum and released to the public in 1991
+    - python is also used in artificial intelligence, mathematics, web development, and scripting
+
+*** additional: OOP basics
+**** OOP four basic concepts
+    - inheritance
+      + mechanism of classes or objects to retain the functionality of another class (a parent class)
+    - polymorphism
+      + poly - many
+      + morph - forms
+      + for a class or object or its methods and properties to have many forms
+    - encapsulation
+      + limiting the access to some data (method or property)
+    - abstraction
+      + hiding complexity from the end user
 ** Variables and Data Types
 *** Variables
     - variables store data
@@ -8,15 +28,15 @@
         - x is the identifier. Can also be called as the variable name/variable
         - 10 is the data stored in the variable
 *** Data types
-- In python there are basic data types:
-    - strings
-    + strings are text surrounded by quotation marks ("")
-    - integers
-    + intergers are real numbers (whole numbers)
-    - boolean
-    + is true or false
-    - float
-    +are floating point numbers
+**** In python there are basic data types:
+****** strings
+			+ strings are text surrounded by quotation marks ("")
+****** integers
+			+ integers are real numbers (whole numbers)
+****** boolean
+			+ is true or false
+****** float
+			+are floating point numbers
 ** Arithmetic Operators
     - tldr: math in python
     - some arithmetic operators
@@ -66,3 +86,4 @@
       y = int(input("Enter second number: "))
       print(f"{x} / {y} = {x / y}")
     #+end_src
+
