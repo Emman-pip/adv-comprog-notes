@@ -57,14 +57,15 @@
       #+end_src
 
 ** Conditional Operators
-*** == (equal)
-*** != (not equal)
-*** > (greater than)
-*** < (less than)
-*** >= (greater than or equal)
-*** <= (less than or equal)
+    - == (equal)
+    - != (not equal)
+    - > (greater than)
+    - < (less than)
+    - >= (greater than or equal)
+    - <= (less than or equal)
 
 ** Example of conditionals in an actual program
+    - the code below is an example of a simple calculator that does four (addition, subtraction, multiplication, and division) operations
     #+begin_src python
     num1 = int(input("Enter first number: "))
     num2 = int(input("Enter second number: "))
