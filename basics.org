@@ -36,7 +36,7 @@
 ****** boolean
 			+ is true or false
 ****** float
-			+are floating point numbers
+			+ are floating point numbers
 ** Arithmetic Operators
     - tldr: math in python
     - some arithmetic operators
