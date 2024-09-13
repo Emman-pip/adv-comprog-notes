@@ -1,4 +1,6 @@
 * Advanced computer programming notes
+A repository to keep track of my lessons in advanced computer programming
+
 ** Content
 |------------------------------+-------------------|
 | title                        | File              |
