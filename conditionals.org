@@ -63,3 +63,22 @@
 *** < (less than)
 *** >= (greater than or equal)
 *** <= (less than or equal)
+
+** Example of conditionals in an actual program
+    #+begin_src python
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    operator = input("Enter operator: ")
+
+    if operator == "+":
+	print(num1 + num2)
+    elif operator == "-":
+	print(num1 - num2)
+    elif operator == "/":
+	print(num1 / num2)
+    elif operator == "*":
+	print(num1 * num2)
+    else:
+	print("invalid operator")
+
+    #+end_src
