@@ -1,0 +1,65 @@
+* Conditional statements
+
+** What are conditional statements
+    - are language constructs that perform different actions based on certain conditions
+    
+** Four key conditional statements (types of conditional statements)
+
+*** IF statement
+    - contains only one simple or complex condition
+
+**** simple condition
+    #+begin_src python
+      if age < 10: 
+	print("Is under 10") # will only be printed if the condition is true
+    #+end_src
+    
+**** complex condition
+    #+begin_src python
+      
+      if age > 10 and age < 18:
+	print("Is between ages 10 and 18") # will only be printed if the condition is true
+    #+end_src
+    
+
+*** IF-ELSE statement
+    - an if statement that has an 'else' statement under
+    - has two conditions
+
+**** example
+    #+begin_src python
+      # The code under 'else' will only run if the condition defined in the 'if' was not met
+      if age > 10 and age < 18:
+	print("Is between ages 10 and 18")
+      else:
+	print("unknown category")
+    #+end_src
+
+*** IF-ELIF-ELSE statement
+    - a conditional statement that contains three or more conditions
+      #+begin_src python
+        if age > 10 and age < 18:
+	  print("Is between ages 10 and 18")
+        elif age < 10:
+	  print("Is a baby")
+        else:
+	  print("unknown category")
+      #+end_src
+
+*** Nested if statements
+    - are if statements inside if statements
+      #+begin_src python
+	if fruit == "Apple":
+	  if fruit.state == "rotten":
+	    print("you can't eat this!!!")
+	  else:
+	    print("eat it! It's good for you")
+      #+end_src
+
+** Conditional Operators
+*** == (equal)
+*** != (not equal)
+*** > (greater than)
+*** < (less than)
+*** >= (greater than or equal)
+*** <= (less than or equal)
