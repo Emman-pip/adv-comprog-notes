@@ -37,6 +37,14 @@
 			+ is true or false
 ****** float
 			+ are floating point numbers
+
+** Casting variables
+    - converting data types
+*** string to integer
+    - int("1111")
+*** integer to string
+    - str(12837819273)
+
 ** Arithmetic Operators
     - tldr: math in python
     - some arithmetic operators
