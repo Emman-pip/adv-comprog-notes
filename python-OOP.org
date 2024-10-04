@@ -139,4 +139,24 @@ for more information about loops [[https://www.geeksforgeeks.org/loops-in-python
     - Attributes are defined in classes and objects
     - Example: a fruit object has the attribute 'state' which tells whether the apple is 'rotten' or 'in good condition'
 
-      
+   
+** What is a class constructors?
+    - a class constructor defines the arguments that will be required whenever a class is instatiated
+    - it is also the block of code that will be executed every time an instance of a class is created
+
+** Example of a class with a contructor and an attribute
+    #+begin_src python
+      # create a blueprint (a class) of a square
+      class Square:
+	  def __init__(self, side): # class contructor
+	      # add an attribute for the length of one side
+	      self.side = side
+
+
+      # create two instances of the Square class
+      sq1 = Square(10)  # a square object whom all sides are of length 10
+      sq2 = Square(20)  # a square object whom all sides are of length 20
+
+      # access the attribute of sq1
+      print(sq1.side) # outputs 10
+    #+end_src
