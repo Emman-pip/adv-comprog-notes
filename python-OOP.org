@@ -1,0 +1,142 @@
+* Python OOP Lecture Notes
+
+** Lab 1 w/ sir Estrella
+    Problem: The user will input his grades in 4 subjects. The program has to identify the category of the student's GWA.
+
+    solution 1: Shorter solution with python dictionaries and list comprehension
+ #+begin_src python
+   categories,subjects  = {74: "Failed", 75: "pasang awa", 80: "okay", 85: 2, 90:1.75, 95:1.50, 100:1}, {"math":None, "science":None, "history":None, "ethics":None}
+   for i,v in subjects.items():
+       grade = int(input(f"what is your average at {i}"))
+       subjects[i] = grade
+   print([f"Your grade is {categories[i]}" for i in list(categories.keys()) if not int(sum(subjects.values()))/len(subjects) > i][0])
+ #+end_src
+
+   solution 2: Longer solution
+   #+begin_src python
+    subjects = ["math", "science", "history", "ethics"]
+    grades = []
+
+    # use a loop to get the user input and append it to the grades list
+    for i in subjects:
+	grade = int(input(f"What is your grade at {i}: "))
+	grades.append(grade)
+
+    # calculate for the GWA
+    average = sum(grades) / len(grades)
+
+    # use if statements to determine the category of the GWA
+    if average >= 75 and average < 80:
+	print("your grade is pasang awa")
+    elif average >= 80 and average < 85:
+	print("your grade is okay")
+    elif average >= 85 and average < 90:
+	print("your grade is 2.00")
+    elif average >= 90 and average < 95:
+	print("your grade is 1.75")
+    elif average >= 95 and average < 100:
+	print("your grade is 1.50")
+    elif average == 100:
+	print("your grade is 1")
+    else:
+	print("you failed this semester..")
+    #+end_src
+** Topics to be familiar about
+    - lists and tuples
+    - loops (for and while loop)
+
+** Lists and tuples
+*** Lists
+    - Lists is a data type: list data type
+    - these are the arrays in python
+    - lists are indexed, mutable, and ordered sequence of elements
+**** Example
+    #+begin_src python
+      # an array of numbers
+      arr = [1,2,3,4,5]
+
+      # Push an element to the array
+      arr.append(6)
+      # after appending, the arr will now be [1,2,3,4,5,6]
+
+      # pop the element at the end of the array
+      arr.pop()
+      # after popping, the arr will now be [1,2,3,4,5]
+
+      # printing each element in a list
+      for i in arr:
+	  print(i)
+
+      # Result:
+      # 1
+      # 2
+      # 3
+      # 4
+      # 5
+
+      # accessing elements in a list
+      print(arr[0]) # elements are accessed using the index 
+    #+end_src
+    - to learn more about array methods [[https://docs.python.org/3/tutorial/datastructures.html][click me]]
+*** Loops
+    - There are two types of loops in python
+      + for loop
+      + while loop
+
+	
+**** while loop
+    - a while loop is a loop that uses the 'while' keyword followed by the condition
+    - the loop will continue until the condition is satisfied
+***** Example
+    #+begin_src python
+      # an infinite while loop
+      while True:
+	  print("I am an infinite loop")
+      # a loop that will continue until the flag is set to false
+      flag = True
+      while flag:
+	  ...
+	  if x = 10:
+	      flag = False
+
+      # a loop that will continue until x is greater than 10
+      while x <= 10:
+	  print(x)
+	  x += 1
+    #+end_src
+**** for loop
+    - for loops are basically the same with while loops, but it can do while loops in a more compact manner
+    - this type of loop can also be used in a for-each loop
+
+    #+begin_src python
+      arr = [1,2,3,4]
+      # for-each loop
+      for i in arr:
+	  print(i)
+
+      # a for loop using the range() function
+      for i in range(0, 10, 2): # will increment by 2
+	  print(i)
+    #+end_src
+
+for more information about loops [[https://www.geeksforgeeks.org/loops-in-python/][click me]]
+
+* Python OOP (attributes)
+** OOP
+    - Object Oriented Programming (OOP) is a programming paradigm that focuses on objects and classes
+
+** what are classes?
+    - are blueprints in which objects are created from
+    - Example: a class for an apple is a blueprint to create an apple(the object)
+ 
+
+** what are objects?
+    - Objects are objects. Objects are digital representations of real-life objects (at sometimes abstract ideas etc.)
+    - objects are also known as instances
+      
+** What are attributes?
+    - represents an attribute of an object
+    - Attributes are defined in classes and objects
+    - Example: a fruit object has the attribute 'state' which tells whether the apple is 'rotten' or 'in good condition'
+
+      
