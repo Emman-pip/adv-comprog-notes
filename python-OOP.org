@@ -4,43 +4,50 @@
     Problem: The user will input his grades in 4 subjects. The program has to identify the category of the student's GWA.
 
     solution 1: Shorter solution with python dictionaries and list comprehension
- #+begin_src python
-   categories,subjects  = {74: "Failed", 75: "pasang awa", 80: "okay", 85: 2, 90:1.75, 95:1.50, 100:1}, {"math":None, "science":None, "history":None, "ethics":None} # needed dictionaries
-   for i,v in subjects.items(): # create a loop to get the user input
+#+begin_src python
+categories,subjects  = {74: "Failed", 75: "pasang awa", 80: "okay", 85: 2, 90:1.75, 95:1.50, 100:1}, {"math":None, "science":None, "history":None, "ethics":None} # needed dictionaries
+for i,v in subjects.items(): # create a loop to get the user input
     grade = int(input(f"what is your average at {i}: "))
     subjects[i] = grade
-   print([f"Your grade is {categories[i]}" for i in list(categories.keys()) if not int(sum(subjects.values()))/len(subjects) > i][0]) # use list comprehension to get the category of the GWA
+print([f"Your grade is {categories[i]}" for i in list(categories.keys()) if not int(sum(subjects.values()))/len(subjects) > i][0]) # use list comprehension to get the category of the GWA
  #+end_src
 
    solution 2: Longer solution
-   #+begin_src python
-    subjects = ["math", "science", "history", "ethics"]
-    grades = []
+#+begin_src python
+subjects = ["math", "science", "history", "ethics"]
+grades = []
 
-    # use a loop to get the user input and append it to the grades list
-    for i in subjects:
-	grade = int(input(f"What is your grade at {i}: "))
-	grades.append(grade)
+# use a loop to get the user input and append it to the grades list
+for i in subjects:
+    grade = int(input(f"What is your grade at {i}: "))
+    grades.append(grade)
 
-    # calculate for the GWA
-    average = sum(grades) / len(grades)
+# calculate for the GWA
+average = sum(grades) / len(grades)
 
-    # use if statements to determine the category of the GWA
-    if average >= 75 and average < 80:
-	print("your grade is pasang awa")
-    elif average >= 80 and average < 85:
-	print("your grade is okay")
-    elif average >= 85 and average < 90:
-	print("your grade is 2.00")
-    elif average >= 90 and average < 95:
-	print("your grade is 1.75")
-    elif average >= 95 and average < 100:
-	print("your grade is 1.50")
-    elif average == 100:
-	print("your grade is 1")
-    else:
-	print("you failed this semester..")
-    #+end_src
+# use if statements to determine the category of the GWA
+if average >= 75 and average < 80:
+    print("your grade is pasang awa")
+elif average >= 80 and average < 85:
+    print("your grade is okay")
+elif average >= 85 and average < 90:
+    print("your grade is 2.00")
+elif average >= 90 and average < 95:
+    print("your grade is 1.75")
+elif average >= 95 and average < 100:
+    print("your grade is 1.50")
+elif average == 100:
+    print("your grade is 1")
+else:
+    print("you failed this semester..")
+#+end_src
+
+    Solution 3: Three lined solution (compressed version of solution 1)
+#+begin_src python
+categories, subjects = {74: "Failed", 75: "pasang awa", 80: "okay", 85: 2, 90: 1.75, 95: 1.50, 100: 1, }, {"math": [], "science": [], "history": [], "ethics": []}
+[subjects[i].append(int(input(f"What is your average at {i}: "))) for i, v in subjects.items()] 
+print([f"Your grade is {categories[i]}" for i in list(categories.keys()) if not int(sum([x[0] for x in subjects.values()])) / len(subjects) > i][0])
+#+end_src
 ** Topics to be familiar about
     - lists and tuples
     - loops (for and while loop)
