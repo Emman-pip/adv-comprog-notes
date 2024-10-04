@@ -4,10 +4,12 @@
     Problem: The user will input his grades in 4 subjects. The program has to identify the category of the student's GWA.
 
     solution 1: Shorter solution with python dictionaries and list comprehension
- #+begin_src python categories,subjects  = {74: "Failed", 75: "pasang awa", 80: "okay", 85: 2, 90:1.75, 95:1.50, 100:1}, {"math":None, "science":None, "history":None, "ethics":None} # needed dictionaries for i,v in subjects.items(): # create a loop to get the user input
-       grade = int(input(f"what is your average at {i}: "))
-       subjects[i] = grade
-   print([f"Your grade is {categories[i]}" for i in list(categories.keys()) if not int(sum(subjects.values()))/len(subjects) > i][0]) # use list comprehension to get the category of the GWA
+ #+begin_src python
+	categories,subjects  = {74: "Failed", 75: "pasang awa", 80: "okay", 85: 2, 90:1.75, 95:1.50, 100:1}, {"math":None, "science":None, "history":None, "ethics":None} # needed dictionaries
+	for i,v in subjects.items(): # create a loop to get the user input
+	     grade = int(input(f"what is your average at {i}: "))
+	     subjects[i] = grade
+	print([f"Your grade is {categories[i]}" for i in list(categories.keys()) if not int(sum(subjects.values()))/len(subjects) > i][0]) # use list comprehension to get the category of the GWA
  #+end_src
 
    solution 2: Longer solution
