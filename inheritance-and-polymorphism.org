@@ -46,34 +46,37 @@
 - super() function
 	- a function that references the parent class
 #+begin_src python
-# Overriding constructors
-class Person:
-    def __init__(self, fname, lname):
-        self.fname = fname
-        self.lname = lname
- def intro(self): print(f"your name is {self.fname} {self.fname}, a lolo")
-class Apo(Person):  # inherits from the Person class
-	# overrides the constructor
-    def __init__(self, fname, lname, mInitial): 
-        super().__init__(fname, lname)
-		# the super function in this case references
-		# the Person class (the super class)
-        self.mInitial = mInitial
-
-	# overrides the intro method
-    def intro(self):  # overriding
-        print(f"I am {self.fname} {self.lname}, {self.mInitial}")
-
-	# adding another method
-    def sayMyInheritedName(self):
-        print(f"my inherited name is {self.lname}")
+  # Overriding constructors
+  class Person:
+      def __init__(self, fname, lname):
+	  self.fname = fname
+	  self.lname = lname
+      def intro(self):
+	  print(f"your name is {self.fname} {self.fname}, a lolo")
 
 
-if __name__ == "__main__":
-    lolo = Person("Johnny", "Doe")
-    unangApo = Apo("John", "Doe", "P")
-    print(lolo.intro())
-    print(unangApo.intro())
+  class Apo(Person):  # inherits from the Person class
+      # overrides the constructor
+      def __init__(self, fname, lname, mInitial): 
+	  super().__init__(fname, lname)
+	  # the super function in this case references
+	  # the Person class (the super class)
+	  self.mInitial = mInitial
+
+      # overrides the intro method
+      def intro(self):  # overriding
+	  print(f"I am {self.fname} {self.lname}, {self.mInitial}")
+
+      # adding another method
+      def sayMyInheritedName(self):
+	  print(f"my inherited name is {self.lname}")
+
+
+  if __name__ == "__main__":
+      lolo = Person("Johnny", "Doe")
+      unangApo = Apo("John", "Doe", "P")
+      print(lolo.intro())
+      print(unangApo.intro())
 
 #+end_src
 ** primitive data type
