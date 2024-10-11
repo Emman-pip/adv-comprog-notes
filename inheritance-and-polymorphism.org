@@ -10,36 +10,38 @@
 
 ** Basic inheritance
 #+begin_src python
-class Person:
-	def __init__(self, fname, lname):
-		self.fname = fname
-		self.lname = lname
-	def intro(self):
-		print(f"your name is {self.fname} {self.fname}")
+  class Person:
+	  def __init__(self, fname, lname):
+		  self.fname = fname
+		  self.lname = lname
+	  def intro(self):
+		  print(f"your name is {self.fname} {self.fname}")
 
 
-#+end_src
-* inheritance
-#+begin_src python
-class Apo(Person):  * inherits from the Person class
-	pass
+  class Apo(Person):  * inherits from the Person class
+	  pass
 
-if __name__ == "__main__":
-	lolo = ("John", "Doe")
-	unangApo = Apo("John", "Doe")
-	print(lolo.intro())
-	print(unangApo.intro())
+  if __name__ == "__main__":
+	  lolo = ("John", "Doe")
+	  unangApo = Apo("John", "Doe")
+	  print(lolo.intro())
+	  print(unangApo.intro())
+
 #+end_src
 *** Inheritance
 - allows child class to inherit parent class
+- a mechanism that allows a class to inherit the properties, attributes, and methods of another class
 
 *** Parent Class
 - a class that is a the base  of a/multiple subclass(es)
+- a class where the subclasses inherit from
+
 
 *** Child class
 - A class that inherits from a parent/super class
 
-** Polymorphism (overriding)
+
+* Polymorphism (overriding)
 - (one of the definitions) is the act of redefining a parent method in a subclass 
 - super() function
 	- a function that references the parent class
@@ -74,10 +76,13 @@ if __name__ == "__main__":
     print(unangApo.intro())
 
 #+end_src
-*** primitive language
-- checks line by line
+** primitive data type
+- Integer
+- float
+- string
+- boolean
 
-*** Activity
+** Activity
 Create a program that will copy the attributes and other stuff of a family (includes parents and child)
 #+begin_src python
 # superclass
@@ -171,5 +176,5 @@ if __name__ == "__main__":
 
 #+end_src
 
-*** output
+** output
 [[./media/act.png]]
