@@ -2,12 +2,33 @@
 A repository to keep track of my lessons in advanced computer programming
 
 ** Content
-|----------------------------------+-------------------|
-| title                            | File              |
-|----------------------------------+-------------------|
-| basics of python programming     | [[./basics.org][link to file here]] |
-|----------------------------------+-------------------|
-| conditional statements           | [[./conditionals.org][link to file here]] |
-|----------------------------------+-------------------|
-| python-OOP with lab 1 (new prof) | [[./python-OOP.org][link to file here]] |
-|----------------------------------+-------------------|
+|--------------------------------------------------------+-------------------|
+| title                                                  | File              |
+|--------------------------------------------------------+-------------------|
+| basics of python programming                           | [[./basics.org][link to file here]] |
+|--------------------------------------------------------+-------------------|
+| conditional statements                                 | [[./conditionals.org][link to file here]] |
+|--------------------------------------------------------+-------------------|
+| python-OOP with lab 1 (new prof)                       | [[./python-OOP.org][link to file here]] |
+|--------------------------------------------------------+-------------------|
+| python-OOP-2 with lab 2 (inheritance and polymorphism) | [[./inheritance-and-polymorphism.org][link to file here]] |
+|--------------------------------------------------------+-------------------|
+
+** midterms pointers
+- [ ] history
+- [ ] data types
+- [ ] type casting
+- [ ] user input
+- [ ] if-else statements
+- [ ] nested if statements
+- [ ] conditional operators
+- [ ] arithmetic operators
+- [ ] list (w/ methods), tuples, dictionaries
+- [ ] tuples
+- [ ] for and while loop
+
+
+**  type of exam (50 items) [may still change]
+- multiple choice
+- true or false (analogy)
+- code sa papel, then output 
