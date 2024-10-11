@@ -9,7 +9,7 @@
 - [x] add methods to a class
 
 ** Basic inheritance
-```python class Person:
+#+begin_src python class Person:
 	def __init__(self, fname, lname):
 		self.fname = fname
 		self.lname = lname
@@ -26,7 +26,7 @@ if __name__ == "__main__":
 	unangApo = Apo("John", "Doe")
 	print(lolo.intro())
 	print(unangApo.intro())
-```
+#+end_src
 *** Inheritance
 - allows child class to inherit parent class
 
@@ -40,7 +40,7 @@ if __name__ == "__main__":
 - (one of the definitions) is the act of redefining a parent method in a subclass 
 - super() function
 	- a function that references the parent class
-```python
+#+begin_src python
 # Overriding constructors
 class Person:
     def __init__(self, fname, lname):
@@ -70,13 +70,13 @@ if __name__ == "__main__":
     print(lolo.intro())
     print(unangApo.intro())
 
-```
+#+end_src
 *** primitive language
 - checks line by line
 
 *** Activity
 Create a program that will copy the attributes and other stuff of a family (includes parents and child)
-```python
+#+begin_src python
 # superclass
 class Person:
     def __init__(self, fname, lname):
@@ -166,7 +166,7 @@ if __name__ == "__main__":
         i.ability()
         print()
 
-```
+#+end_src
 
 *** output
 [[./media/act.png]]
