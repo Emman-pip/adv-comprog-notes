@@ -15,17 +15,17 @@ A repository to keep track of my lessons in advanced computer programming
 |--------------------------------------------------------+-------------------|
 
 ** midterms pointers
-- [ ] history
-- [ ] data types
-- [ ] type casting
-- [ ] user input
-- [ ] if-else statements
-- [ ] nested if statements
-- [ ] conditional operators
-- [ ] arithmetic operators
-- [ ] list (w/ methods), tuples, dictionaries
-- [ ] tuples
-- [ ] for and while loop
+- [-] history
+- [-] data types
+- [-] type casting
+- [-] user input
+- [-] if-else statements
+- [-] nested if statements
+- [-] conditional operators
+- [-] arithmetic operators
+- [-] list (w/ methods), tuples, dictionaries
+- [-] tuples
+- [-] for and while loop
 
 
 **  type of exam (50 items) [may still change]
