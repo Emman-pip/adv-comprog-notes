@@ -9,7 +9,8 @@
 - [x] add methods to a class
 
 ** Basic inheritance
-#+begin_src python class Person:
+#+begin_src python
+class Person:
 	def __init__(self, fname, lname):
 		self.fname = fname
 		self.lname = lname
@@ -17,7 +18,9 @@
 		print(f"your name is {self.fname} {self.fname}")
 
 
+#+end_src
 * inheritance
+#+begin_src python
 class Apo(Person):  * inherits from the Person class
 	pass
 
