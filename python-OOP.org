@@ -142,15 +142,18 @@ for more information about loops [[https://www.geeksforgeeks.org/loops-in-python
 
 ** what are classes?
     - are blueprints in which objects are created from
+    - used to created blueprints for objects
+    - will represent attributes and purpose
     - Example: a class for an apple is a blueprint to create an apple(the object)
  
 
 ** what are objects?
-    - Objects are objects. Objects are digital representations of real-life objects (at sometimes abstract ideas etc.)
+    - Objects are digital representations of real-life objects (at sometimes abstract ideas etc.)
     - objects are also known as instances
+    - everything that has an attribute and a purpose 
       
 ** What are attributes?
-    - represents an attribute of an object
+    - **represents an attribute of an object*
     - Attributes are defined in classes and objects
     - Example: a fruit object has the attribute 'state' which tells whether the apple is 'rotten' or 'in good condition'
 

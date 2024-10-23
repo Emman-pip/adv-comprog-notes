@@ -9,24 +9,26 @@
 
 *** additional: OOP basics
 **** OOP four basic concepts
-    - inheritance
+    - *inheritance*
       + mechanism of classes or objects to retain the functionality of another class (a parent class)
-    - polymorphism
+    - *polymorphism*
       + poly - many
       + morph - forms
       + for a class or object or its methods and properties to have many forms
-    - encapsulation
+    - *encapsulation*
       + limiting the access to some data (method or property)
-    - abstraction
+    - *abstraction*
       + hiding complexity from the end user
 ** Variables and Data Types
 *** Variables
+    - syntax (in python):
+      + identifier = value
     - variables store data
     - parts of a variable:
       + example:
       + x = 10
-        - x is the identifier. Can also be called as the variable name/variable
-        - 10 is the data stored in the variable
+        - x is the *identifier*. Can also be called as the variable name/variable
+        - 10 is the *data* stored in the variable
 *** Data types
 **** In python there are basic data types:
 ****** strings
