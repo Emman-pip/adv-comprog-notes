@@ -6,7 +6,7 @@
 - [X] overriding constructor
 - [X] super() function
 - [X] overriding a function/method
-- [x] add methods to a class
+- [X] add methods to a class
 
 ** Basic inheritance
 #+begin_src python

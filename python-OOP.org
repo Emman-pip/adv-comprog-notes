@@ -161,6 +161,7 @@ for more information about loops [[https://www.geeksforgeeks.org/loops-in-python
 ** What is a class constructor?
     - a class constructor defines the arguments that will be required whenever a class is instatiated
     - it is also the block of code that will be executed every time an instance of a class is created
+    - in python ~def __init__(self):~ function is used to create a constructor
 
 ** Example of a class with a constructor and an attribute
     #+begin_src python
