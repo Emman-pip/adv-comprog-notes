@@ -177,4 +177,5 @@ for more information about loops [[https://www.geeksforgeeks.org/loops-in-python
 
       # access the attribute of sq1
       print(sq1.side) # outputs 10
+      print(sq2.side) # outputs 20
     #+end_src
