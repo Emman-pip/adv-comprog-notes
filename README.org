@@ -36,4 +36,4 @@ A repository to keep track of my lessons in advanced computer programming
 - code sa papel, then output 
 
 ## Activities
-- are on the activities folder (includes ) and in the finals_start.ipynb (includes 3 activities)
+- are on the activities folder and in the finals_start.ipynb (includes 3 activities)
