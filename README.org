@@ -34,3 +34,6 @@ A repository to keep track of my lessons in advanced computer programming
 - multiple choice
 - true or false (analogy)
 - code sa papel, then output 
+
+## Activities
+- are on the activities folder (includes ) and in the finals_start.ipynb (includes 3 activities)
